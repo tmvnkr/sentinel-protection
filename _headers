@@ -1,0 +1,8 @@
+/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/index.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/*.pdf
+  Cache-Control: public, max-age=31536000, immutable
