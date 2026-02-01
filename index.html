@@ -28,15 +28,31 @@
   </head>
   <body>
     <header>
-      <img
-        src="assets/sp-logo.png"
-        alt="Sentinel Protection Logo"
-        class="logo"
-        width="500"
-        height="150"
-      />
+      <picture>
+        <source srcset="assets/sp-logo.webp" type="image/webp" />
+        <img
+          src="assets/sp-logo.png"
+          alt="Sentinel Protection Logo"
+          class="logo"
+          width="1000"
+          height="257"
+        />
+      </picture>
     </header>
     <main class="hero">
+      <picture class="hero-media" aria-hidden="true">
+        <source srcset="assets/hero.webp" type="image/webp" />
+        <img
+          src="assets/hero.png"
+          alt=""
+          class="hero-image"
+          width="1536"
+          height="1024"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </picture>
       <div class="hero-content">
         <ul class="activities" aria-label="Diensten">
           <li>Preventieve observatie</li>
