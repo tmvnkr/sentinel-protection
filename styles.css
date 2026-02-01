@@ -38,33 +38,27 @@ header {
   justify-content: center;
   padding: 0 2rem;
   position: relative;
-  z-index: 0;
-  overflow: hidden;
 }
 
-.hero-media {
+.hero::before {
+  content: "";
   position: absolute;
-  inset: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.hero-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+  background-image: url("assets/hero.webp");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  position: relative;
-  z-index: 1;
 }
 
 .activities {
@@ -218,9 +212,9 @@ footer {
     padding: 2rem 1.5rem;
   }
 
-  .hero-image {
+  .hero::before {
     opacity: 0.65;
-    object-fit: cover;
+    background-size: cover;
   }
 
   .hero-content {
